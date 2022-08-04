@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GameFriendsFinder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="i_dont_have_account">  <u>  I don\'t have a account </u> </string>
+    <string name="forget_password"><u>Forget passowrd</u></string>
+    <string name="i_have_account"><u>I have a account</u></string>
+    <string name="game_friends">Game Friends</string>
+    <string name="game_info">Game Info</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="my_profile">My Profile</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/profileInfoFragment">
+
+    <fragment
+        android:id="@+id/gameFriendFragment"
+        android:name="com.t4zb.gamefriendsfinder.ui.fragment.profilemenu.GameFriendFragment"
+        android:label="fragment_game_friend"
+        tools:layout="@layout/fragment_game_friend" />
+    <fragment
+        android:id="@+id/profileInfoFragment"
+        android:name="com.t4zb.gamefriendsfinder.ui.fragment.profilemenu.ProfileInfoFragment"
+        android:label="fragment_profile_info"
+        tools:layout="@layout/fragment_profile_info" />
+    <fragment
+        android:id="@+id/gameInfoFragment"
+        android:name="com.t4zb.gamefriendsfinder.ui.fragment.profilemenu.GameInfoFragment"
+        android:label="fragment_game_info"
+        tools:layout="@layout/fragment_game_info" >
+        <action
+            android:id="@+id/action_gameInfoFragment_to_addGameFragment"
+            app:destination="@id/addGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGameFragment"
+        android:name="com.t4zb.gamefriendsfinder.ui.fragment.AddGameFragment"
+        android:label="fragment_add_game"
+        tools:layout="@layout/fragment_add_game" >
+        <action
+            android:id="@+id/action_addGameFragment_to_gameInfoFragment"
+            app:destination="@id/gameInfoFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profileInfoFragment"
+        android:title="@string/personal_info"/>
+    <item
+        android:id="@+id/gameInfoFragment"
+        android:title="@string/game_info"/>
+    <item
+        android:id="@+id/gameFriendFragment"
+        android:title="@string/game_friends"/>
+</menu>
